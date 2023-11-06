@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Imposta flex-grow a 1 per far espandere il contenuto principale */
+main {
+    flex-grow: 1;
+}
+
+/* Stili per l'immagine circolare e il testo "Welcome Trudu" */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'immagine sarà ridimensionata per coprire completamente il cerchio */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.list-item {
+    margin-right: 20px; /* Modifica il valore per regolare la spaziatura */
+}
+
+
+.custom-cursor {
+    width: 70px;
+    height: 70px;
+    background-image: url('../IMG/cursor.gif'); /* Sostituisci 'icona-cursore.png' con il percorso dell'immagine del tuo cursore personalizzato */
+    background-size: cover;
+    position: absolute;
+    pointer-events: none; /* Impedisci che l'icona interferisca con gli elementi sottostanti */
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Assicurati che il cursore sia sopra tutti gli altri elementi */
+}
+

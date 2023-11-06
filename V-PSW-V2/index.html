@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+
+    <!-- Collegamento a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Collegamento al tuo file CSS personalizzato -->
+    <link rel="stylesheet" href="./Style/styles.css">
+</head>
+<body class="d-flex flex-column">
+    
+    <header class="bg-dark text-white text-center p-3">
+        <h1>Password Manager V2</h1><h6>Vinu Etc. Edition</h6>
+    </header>
+
+    <div class="container-fluid flex-grow-1 d-flex">
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="position-sticky">
+                <div class="text-center my-3">
+                    <!-- Immagine circolare con classe "profile-image" -->
+                    <div class="profile-image">
+                        <img src="./IMG/Vinu.png" alt="Immagine del profilo">
+                    </div>
+                    <!-- Testo "Welcome Trudu" -->
+                    <p>Welcome Vinu!</p>
+                </div>
+    
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <hr class="my-1"> <!-- Aggiunge una linea separatrice -->
+                        <a class="nav-link" href="./PAGES/add.html">
+                            <i class="fas fa-plus"></i> Add
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <hr class="my-1"> <!-- Aggiunge una linea separatrice -->
+                        <a class="nav-link" href="./PAGES/remove.html">
+                            <i class="fas fa-trash"></i> Remove
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <main class="container d-flex justify-content-center align-items-center min-vh-70" id="main">
+            <div class="row">
+                <h1 class="text-center mb-4">Lista Users</h1>
+                <div class="col-12">
+                    <input
+                        type="text"
+                        id="searchBar"
+                        class="form-control my-3"
+                        placeholder="Cerca per nome, user o link..."
+                    >
+                </div>
+                <div class="col-12">
+                    <ul id="userList" class="list-group">
+                        <!-- Gli utenti verranno visualizzati qui -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+    </div>   
+    
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Powered by Sca x Emanue'</p>
+    </footer>
+
+    <!-- Collegamento a Bootstrap JavaScript (jQuery e Popper.js inclusi) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./SCRIPTS/script.js"></script>
+    <script src="./DATA/users.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
